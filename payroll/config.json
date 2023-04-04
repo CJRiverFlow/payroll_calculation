@@ -1,0 +1,52 @@
+{
+  "payment_schedules": {
+    "default": {
+      "name": "default",
+      "periods": [
+        {
+          "name": "weekday",
+          "days": ["MO", "TU", "WE", "TH", "FR"],
+          "time_slots": [
+            {
+              "start": "00:01",
+              "end": "09:00",
+              "rate": 25
+            },
+            {
+              "start": "09:01",
+              "end": "18:00",
+              "rate": 15
+            },
+            {
+              "start": "18:01",
+              "end": "00:00",
+              "rate": 20
+            }
+          ]
+        },
+        {
+          "name": "weekend",
+          "days": ["SA", "SU"],
+          "time_slots": [
+            {
+              "start": "00:01",
+              "end": "09:00",
+              "rate": 30
+            },
+            {
+              "start": "09:01",
+              "end": "18:00",
+              "rate": 20
+            },
+            {
+              "start": "18:01",
+              "end": "00:00",
+              "rate": 25
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
+
